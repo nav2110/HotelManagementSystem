@@ -1,0 +1,7 @@
+
+Fsquid:S1068"(Remove this unused "name" private field.(Ë¥¼8û³À™Ÿ-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á«ï¢ùÿÿÿÿ
+Psquid:S1068
+"-Remove this unused "roomsLeft" private field.(ğ·ğ–ıÿÿÿÿ8”»Â™Ÿ-
+Gsquid:S1068")Remove this unused "stars" private field.(Ÿš8û³À™Ÿ-
+Osquid:S1068",Remove this unused "capacity" private field.(òéÃúûÿÿÿÿ8ŒÃØ™Ÿ-
