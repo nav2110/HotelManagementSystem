@@ -2,7 +2,6 @@ package Hotel;
 
 import People.Client;
 import People.HotelEmployee;
-import People.PartTimeHotelEmployee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,44 +50,11 @@ public class Hotel {
         return location;
     }
 
-    public void setEmployees(List<Hotel> hotels){
 
-        for (Hotel hotel: hotels){
-
-            if ("Dacia".equals(hotel.getName())) {
-                HotelEmployee employee1 = new HotelEmployee("Radu Radulescu", "78645", "cleaner");
-                HotelEmployee employee2 = new HotelEmployee("Jean Ionescu", "68645", "receptionist");
-                HotelEmployee employee3 = new PartTimeHotelEmployee("Paul Pavelescu", "1", "manager", (short) 20);
-
-                List<HotelEmployee> employees = new ArrayList<HotelEmployee>();
-                employees.add(employee1);
-                employees.add(employee2);
-                employees.add(employee3);
-            } else if ("Grand Hotel Italia".equals(hotel.getName())) {
-                HotelEmployee employee21 = new HotelEmployee("George Georgescu", "58645", "cleaner");
-                HotelEmployee employee22 = new HotelEmployee("Vasile Vasilescu", "48645", "receptionist");
-                HotelEmployee employee23 = new PartTimeHotelEmployee("Paul Pavelescu", "007", "manager", (short) 10);
-
-                List<HotelEmployee> employees2 = new ArrayList<HotelEmployee>();
-                employees2.add(employee21);
-                employees2.add(employee22);
-                employees2.add(employee23);
-            } else if ("Continental".equals(hotel.getName())) {
-                HotelEmployee employee31 = new HotelEmployee("Mihai Mihailescu", "38645", "cleaner");
-                HotelEmployee employee32 = new HotelEmployee("Jean Ionescu", "38645", "receptionist");
-                HotelEmployee employee33 = new PartTimeHotelEmployee("Paul Pavelescu", "111", "manager", (short) 30);
-
-                List<HotelEmployee> employees3 = new ArrayList<HotelEmployee>();
-                employees3.add(employee31);
-                employees3.add(employee32);
-                employees3.add(employee33);
-            }
-        }
+    public void setRooms(List<Room> rooms) {
+        this.rooms=rooms;
     }
 
-    public List<HotelEmployee> getEmployees() {
-        return employees;
-    }
 
     public List<Room> getRooms() {
         return rooms;
@@ -119,4 +85,11 @@ public class Hotel {
         return clients;
     }
 
+    public void setEmployees(List<HotelEmployee> employees) {
+        this.employees=employees;
     }
+
+    public void setClients(List<Client> clients) {
+        this.clients=clients;
+    }
+}
