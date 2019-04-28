@@ -1,4 +1,4 @@
-package HotelManagement;
+package Hotel;
 
 public class Room {
     String type;
@@ -6,7 +6,7 @@ public class Room {
 
     public Room(String type, double price) {
         this.type = type;
-        this.price = price;
+        this.price=price;
     }
 
     public String getType() {
