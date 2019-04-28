@@ -8,11 +8,11 @@ public class HotelTest {
 
     private Hotel hotel;
 
-    @Before
-    public void setup(){
-        hotel=new Hotel("Alex", (short) 4, "cj", 555, true);
-
-    }
+//    @Before
+//    public void setup(){
+//        hotel=new Hotel("Alex", (short) 4, "cj", 555, true);
+//
+//    }
 
     @Test
     public void getHotelNameTest(){
