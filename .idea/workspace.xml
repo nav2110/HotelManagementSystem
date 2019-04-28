@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc9cbeeb-4493-465e-b15c-d8adb3d41864" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/People/HotelEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/People/IPersonMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/People/PartTimeHotelEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/People/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HotelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0cb5941f296ddc7c4b2e5d074ff5ea793249dca8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/1035cdb468fc1c29676eeca95376b9bdc88a1bc4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/254915ec3f6a0dcde5c75aeed449076603fe1dfa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4d26caa38eee01882390e1c738ae0686758721e7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HotelManagement/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/People/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HotelManagement/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HotelManagement/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HotelManagement/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hotel/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HotelManagement/iBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hotel/iBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HotelManagement/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HotelManagement/Hotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HotelManagement/MainMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HotelManagement/Room.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HotelManagement/iBooking.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/People/IPersonMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -90,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Menu/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="129">
+              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -99,17 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/iBooking.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="810">
+              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -117,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/People/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="509">
               <caret line="38" column="35" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="35" />
             </state>
           </provider>
@@ -168,7 +137,6 @@
         <option value="$PROJECT_DIR$/src/main/java/HotelManagement/iBooking.java" />
         <option value="$PROJECT_DIR$/src/main/java/People/IPeopleMenu.java" />
         <option value="$PROJECT_DIR$/src/test/java/PersonTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HotelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotel/iBooking.java" />
         <option value="$PROJECT_DIR$/src/main/java/People/IPersonMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/People/partTimeHotelEmployee.java" />
@@ -178,6 +146,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/People/HotelEmployee.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotel/Room.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HotelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" />
         <option value="$PROJECT_DIR$/src/main/java/Menu/MainMenu.java" />
       </list>
@@ -350,6 +319,28 @@
       <option name="presentableId" value="Default" />
       <updated>1554558328198</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second commit">
+      <created>1556445905679</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556445905680</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Second commit">
+      <created>1556445938303</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556445938304</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Second commit">
+      <created>1556450644567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556450644567</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -382,7 +373,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -403,19 +394,16 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/HotelManagement/iHotel.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/PersonTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="5" selection-start-line="10" selection-start-column="3" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -445,14 +433,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/People/IPersonMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/People/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="35" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -463,17 +444,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Room.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/People/HotelEmployee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        <state relative-caret-position="190">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -484,17 +458,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/People/HotelEmployee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/People/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
+        <state relative-caret-position="810">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Menu/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        <state relative-caret-position="129">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
         </state>
       </provider>
     </entry>
