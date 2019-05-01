@@ -1,12 +1,18 @@
 package People;
 
+import Enums.Gender;
+
 public class PartTimeHotelEmployee extends HotelEmployee {
     private short nrOfWorkingHours;
 
-    public PartTimeHotelEmployee(String name, String id, String jobTitle, short nrOfWorkingHours) {
+    public PartTimeHotelEmployee(String name, String id, String employeeNr, String jobTitle, Gender gender, short nrOfWorkingHours) {
 
-        super(name, id, jobTitle);
+        super(name, id, employeeNr, jobTitle, gender);
 
         this.nrOfWorkingHours = nrOfWorkingHours;
+    }
+
+    public short getNrOfWorkingHours() {
+        return nrOfWorkingHours;
     }
 }

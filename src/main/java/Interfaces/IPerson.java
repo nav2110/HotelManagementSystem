@@ -1,14 +1,15 @@
-package People;
+package Interfaces;
 
 import Hotel.Hotel;
 
 import java.util.List;
 
-public interface IPersonMenu {
+public interface IPerson {
+
 
     String getPersonName();
 
-    String getId();
+    String toString();
 
     void findHotelWherePersonIs(List<Hotel> hotels);
 

@@ -1,22 +1,44 @@
 package People;
 
-public class HotelEmployee extends Person {
+import Enums.Gender;
 
+public class HotelEmployee extends Person {
 
     private String jobTitle;
 
+    private final Gender gender;
+    private String employeeNr;
 
 
-    public HotelEmployee(String name, String id, String jobTitle) {
+    public HotelEmployee(String name, String id, String employeeNr, String jobTitle, Gender gender) {
         super(name, id);
-
+        this.employeeNr = employeeNr;
         this.jobTitle = jobTitle;
+        this.gender = gender;
     }
 
 
     public String getJobTitle() {
         return jobTitle;
 
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+
+    //Override the method from the Person class for the last four digits of the employer number
+    @Override
+    public String toString() {
+        String lastFourDigits = "";
+
+        if (employeeNr.length() > 4) {
+            lastFourDigits = employeeNr.substring(employeeNr.length() - 4);
+        } else {
+            lastFourDigits = employeeNr;
+        }
+        return "Last four characters of the employee id= " + lastFourDigits;
     }
 
 

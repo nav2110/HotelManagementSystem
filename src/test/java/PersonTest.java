@@ -21,11 +21,7 @@ public class PersonTest {
 
     }
 
-    @Test
-    public void getIdOfPersonTest(){
 
-        assertEquals("786165", person.getId());
-    }
 
 
 }

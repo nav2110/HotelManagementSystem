@@ -1,5 +1,7 @@
 package Hotel;
 
+import Enums.HotelLocation;
+import Menu.Room;
 import People.Client;
 import People.HotelEmployee;
 
@@ -11,7 +13,7 @@ public class Hotel {
 
     private int stars;
 
-    private final String location;
+    private final HotelLocation location;
 
     private final int capacity;
 
@@ -22,10 +24,8 @@ public class Hotel {
 
     private List<Room> rooms = new ArrayList<Room>();
 
-
-
-    public Hotel(String name, int stars, String location, int capacity){
-        this.name=name;
+    public Hotel(String name, int stars, HotelLocation location, int capacity) {
+        this.name = name;
         this.stars = stars;
         this.capacity = capacity;
         this.location = location;
@@ -33,31 +33,27 @@ public class Hotel {
     }
 
 
-
     public String getName() {
         return name;
     }
 
-    public int getCapacity() {
-        return capacity;
-    }
 
     public int getStars() {
         return stars;
     }
 
     public String getLocation() {
-        return location;
+
+        return location.getCityName() +
+                ", zip code: " +
+                location.getZipCode() +
+                ", phone Number: " +
+                location.getPhoneNo();
     }
 
 
     public void setRooms(List<Room> rooms) {
-        this.rooms=rooms;
-    }
-
-
-    public List<Room> getRooms() {
-        return rooms;
+        this.rooms = rooms;
     }
 
 
@@ -65,15 +61,6 @@ public class Hotel {
         return employees;
     }
 
-
-    public boolean isAvailabe() {
-        if (roomsAvailable() > 0) {
-            return true;
-        } else {
-            return false;
-        }
-
-    }
 
     public int roomsAvailable() {
 
@@ -86,10 +73,10 @@ public class Hotel {
     }
 
     public void setEmployees(List<HotelEmployee> employees) {
-        this.employees=employees;
+        this.employees = employees;
     }
 
     public void setClients(List<Client> clients) {
-        this.clients=clients;
+        this.clients = clients;
     }
 }

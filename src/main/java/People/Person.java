@@ -1,25 +1,51 @@
 package People;
 
 import Hotel.Hotel;
+import Interfaces.IPerson;
+import Interfaces.ISatisfaction;
+import org.apache.log4j.Logger;
 
 import java.util.List;
 
-public class Person implements IPersonMenu{
+import static People.ValidationException.validRate;
+
+//example of multiple inheritance
+public class Person implements IPerson, ISatisfaction {
+
+    private static final Logger logger = Logger.getLogger(Person.class.getName());
 
     private String name;
 
-    private String id;
+    private String idNrOrCreditCard;
 
-    public Person(String name, String id){
+    public Person(String name, String idNrOrCreditCard) {
         this.name=name;
-        this.id=id;
+        this.idNrOrCreditCard = idNrOrCreditCard;
     }
 
-    public String getId() {
-        return id;
+    public String toString() {
+        String lastFourDigits = "";
+
+        if (idNrOrCreditCard.length() > 4) {
+            lastFourDigits = idNrOrCreditCard.substring(idNrOrCreditCard.length() - 4);
+        } else {
+            lastFourDigits = idNrOrCreditCard;
+        }
+        return "Last four digits of idNrOrCreditCard" + lastFourDigits;
     }
 
+    String getNumber() {
+        return idNrOrCreditCard;
+    }
+
+    /*
+    There are two static methods listing employees and clients in the main class
+    that perform the same task.
+    */
+
+    @Deprecated
     public void findHotelWherePersonIs(List<Hotel> hotels) {
+
 
         //Loop through hotels
         for(Hotel hotel: hotels){
@@ -27,8 +53,8 @@ public class Person implements IPersonMenu{
             //loop first through clients list to see whether the person is a client of the hotel
             List<Client> clients= hotel.getClients();
             for(Client client: clients){
-                if(name.equals(client.getPersonName())&&id.equals(client.getId())){
-                    System.out.println(client.getPersonName()+" is a client of the hotel "+hotel.getName());
+                if (name.equals(client.getPersonName()) && idNrOrCreditCard.equals(client.getNumber())) {
+                    logger.debug(client.getPersonName() + " is a client of the hotel " + hotel.getName());
                     break;
                 }
             }
@@ -36,8 +62,8 @@ public class Person implements IPersonMenu{
             //loop then through the employee lists to see if the client is not actually an employee
             List<HotelEmployee> employees= hotel.getHotelEmployees();
             for(HotelEmployee employee: employees){
-                if(name.equals(employee.getPersonName())&&id.equals(employee.getId())){
-                    System.out.println(employee.getPersonName()+" is an employee of the hotel "+hotel.getName());
+                if (name.equals(employee.getPersonName()) && idNrOrCreditCard.equals(employee.getNumber())) {
+                    logger.debug(employee.getPersonName() + " is an employee of the hotel " + hotel.getName());
                     break;
                 }
             }
@@ -52,4 +78,27 @@ public class Person implements IPersonMenu{
     }
 
 
+    public void isSatisfied(Person person, Boolean yes) {
+        if (yes) {
+            logger.debug(person.getPersonName() + " is satisfied. ");
+        } else {
+            logger.debug(person.getPersonName() + " is not satisfied. ");
+        }
+    }
+
+    public void comments(String message) {
+        logger.debug("Satisfaction comments: " + message);
+    }
+
+    public void ratesHotel(Person person, int rating, Hotel hotel) {
+        try {
+            validRate(rating);
+            logger.debug(person.getPersonName() + " rates " + hotel.getName() + " at " + rating + " stars");
+
+
+        } catch (ValidationException e) {
+            logger.debug("Invalid rating argument: " + e.getMessage());
+        }
+
+    }
 }
