@@ -1,7 +1,7 @@
 package People;
 
-public class ValidationException extends Exception {
-    private ValidationException(String message) {
+class ValidationException extends Exception {
+    ValidationException(String message) {
         super(message);
     }
 

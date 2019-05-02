@@ -12,6 +12,7 @@ import static People.ValidationException.validRate;
 //example of multiple inheritance
 public class Person implements IPerson, ISatisfaction {
 
+
     private static final Logger logger = Logger.getLogger(Person.class.getName());
 
     private String name;
@@ -31,7 +32,7 @@ public class Person implements IPerson, ISatisfaction {
         } else {
             lastFourDigits = idNrOrCreditCard;
         }
-        return "Last four digits of idNrOrCreditCard" + lastFourDigits;
+        return "Last four digits of credit card or employee number: " + lastFourDigits;
     }
 
     String getNumber() {
@@ -90,6 +91,7 @@ public class Person implements IPerson, ISatisfaction {
         logger.debug("Satisfaction comments: " + message);
     }
 
+    //Use custom ValidationException in case the user rates wrongly the hotel
     public void ratesHotel(Person person, int rating, Hotel hotel) {
         try {
             validRate(rating);
