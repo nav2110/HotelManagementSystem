@@ -6,6 +6,8 @@ import org.apache.logging.log4j.Logger;
 import service.IBooking;
 import service.OverloadConstructor;
 
+import java.util.Objects;
+
 
 public class Client extends Person implements IBooking {
 
@@ -59,8 +61,8 @@ public class Client extends Person implements IBooking {
 
         if (nights < 0) throw new IllegalArgumentException("Client cannot have a negative number of nights.");
         else {
-
-            costs = room.getPrice() * nights;
+            double price = (double) room.getPrice();
+            costs = price * nights;
 
                 /*
                 If the client did not rent a car then the plateNumber should be null.
@@ -94,4 +96,16 @@ public class Client extends Person implements IBooking {
     }
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Client)) return false;
+        Client client = (Client) o;
+        return creditCard.equals(client.creditCard);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(creditCard);
+    }
 }

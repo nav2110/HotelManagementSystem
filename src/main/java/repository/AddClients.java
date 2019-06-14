@@ -15,7 +15,10 @@ import java.util.List;
  * Multiply inherited methods for satisfaction, rating, and comments.
  */
 public class AddClients {
-    protected static void addClientsAndRooms(List<Hotel> hotels) throws Exception {
+
+    //Use of generic wildcards for a hotel list that cannot be modified.
+
+    protected static void addClientsAndRooms(List<? extends Hotel> hotels) throws Exception {
         //Distinguish between clients with and without rented cars, and use the appropriate overloaded constructor
         //Adds three types of rooms and prices to each hotel.
 

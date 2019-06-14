@@ -26,7 +26,7 @@ public class RoomTest {
 
     @Test
     public void getPrice() {
-        double actual = room.getPrice();
+        double actual = (double) room.getPrice();
         assertEquals(22.22, actual);
     }
 }

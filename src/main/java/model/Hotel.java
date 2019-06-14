@@ -1,11 +1,13 @@
 package model;
 
+import lombok.Getter;
 import model.enums.HotelLocation;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class Hotel implements Serializable {
 
     private String name;
@@ -22,7 +24,8 @@ public class Hotel implements Serializable {
 
     private List<Room> rooms = new ArrayList<>();
 
-    private long serialVersionUID = 1l;
+    private Long uuid;
+
 
     public Hotel(String name, int stars, HotelLocation location, int capacity) {
         this.name = name;
@@ -32,6 +35,13 @@ public class Hotel implements Serializable {
 
     }
 
+    public Long getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(Long uuid) {
+        this.uuid = uuid;
+    }
 
     public String getName() {
         return name;
@@ -52,11 +62,13 @@ public class Hotel implements Serializable {
     }
 
 
-
     public List<HotelEmployee> getHotelEmployees() {
         return employees;
     }
 
+    public List<Client> getClients() {
+        return clients;
+    }
 
     public int roomsAvailable() {
 
@@ -64,9 +76,6 @@ public class Hotel implements Serializable {
         return capacity - clients.size();
     }
 
-    public List<Client> getClients() {
-        return clients;
-    }
 
     public void setEmployees(List<HotelEmployee> employees) {
         this.employees = employees;

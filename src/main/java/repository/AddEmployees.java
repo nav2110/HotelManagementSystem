@@ -14,8 +14,8 @@ Multiply inherited methods for satisfaction, rating, and comments.
  */
 class AddEmployees {
 
-
-    static void addEmployees(List<Hotel> hotels) throws Exception {
+    //Use of Generic wildcard
+    static void addEmployees(List<? extends Hotel> hotels) throws Exception {
 
 
         HotelEmployee employee1 = new HotelEmployee("Radu Radulescu", "78645", "PN54254256JU", "cleaner", Gender.MALE);

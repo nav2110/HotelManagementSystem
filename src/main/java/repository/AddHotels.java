@@ -10,6 +10,7 @@ import java.util.List;
 class AddHotels {
     private static Logger logger = LogManager.getLogger(AddHotels.class);
 
+    //Use of Generic wildcard
     static void addHotels(List<Hotel> hotels) {
 
 
