@@ -1,0 +1,3 @@
+single room
+double room
+triple room

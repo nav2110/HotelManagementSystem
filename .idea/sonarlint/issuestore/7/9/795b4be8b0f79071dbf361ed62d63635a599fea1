@@ -1,0 +1,4 @@
+
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(κα„Αόÿÿÿÿ
+rsquid:CallToDeprecatedMethod.">Remove this use of "findHotelWherePersonIs"; it is deprecated.(δ¦ϊÿÿÿÿ8‚Ω…­-
+asquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ττ ÿÿÿÿÿ8€ΚΎµª-

@@ -1,0 +1,6 @@
+
+Gsquid:S1948")Make "clients" transient or serializable.(Ú„½¬8‘€Ê²­-
+qsquid:S1450"TRemove the "rooms" field and declare it as a local variable in the relevant methods.(íÙ¡38æö¥‡µ-
+Fsquid:S1068")Remove this unused "rooms" private field.(íÙ¡38ôÜ¤‡µ-
+Isquid:S1948"+Make "employees" transient or serializable.(™ÁÛ¸8‘€Ê²­-
+Dsquid:S1948"'Make "rooms" transient or serializable.(íÙ¡38ôÜ¤‡µ-
