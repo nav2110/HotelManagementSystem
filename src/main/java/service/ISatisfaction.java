@@ -1,7 +1,7 @@
-package Interfaces;
+package service;
 
-import Hotel.Hotel;
-import People.Person;
+import model.Hotel;
+import model.Person;
 
 public interface ISatisfaction {
     /*
@@ -12,6 +12,6 @@ public interface ISatisfaction {
 
     void ratesHotel(Person person, int rating, Hotel hotel) throws Exception;
 
-    void comments(String message);
+    String comments(String message);
 
 }

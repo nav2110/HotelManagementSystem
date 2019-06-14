@@ -1,4 +1,4 @@
-package Enums;
+package model.enums;
 
 public enum HotelLocation {
     BUCURESTI("Bucuresti", " 021 310 2020", "010051"),

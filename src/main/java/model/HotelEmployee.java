@@ -1,6 +1,6 @@
-package People;
+package model;
 
-import Enums.Gender;
+import model.enums.Gender;
 
 public class HotelEmployee extends Person {
 

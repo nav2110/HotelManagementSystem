@@ -1,4 +1,4 @@
-package People;
+package model;
 
 class ValidationException extends Exception {
     ValidationException(String message) {

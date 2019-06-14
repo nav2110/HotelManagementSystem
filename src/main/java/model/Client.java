@@ -1,21 +1,22 @@
-package People;
+package model;
 
 
-import Interfaces.IBooking;
-import Interfaces.OverloadConstructor;
-import Menu.Room;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import service.IBooking;
+import service.OverloadConstructor;
 
 
 public class Client extends Person implements IBooking {
 
-    private static final Logger logger = Logger.getLogger(Client.class.getName());
+    private static final Logger logger = LogManager.getLogger(Client.class);
 
     private String creditCard;
 
     private double costs = 0;
 
     private String plateNumber;
+
 
     public Client(String name, String id, String creditCard) {
         super(name, id);

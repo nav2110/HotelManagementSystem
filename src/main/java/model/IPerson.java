@@ -1,6 +1,4 @@
-package Interfaces;
-
-import Hotel.Hotel;
+package model;
 
 import java.util.List;
 

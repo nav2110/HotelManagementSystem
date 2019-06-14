@@ -1,9 +1,9 @@
-package People;
+package model;
 
-import Enums.HotelLocation;
-import Hotel.Hotel;
-import org.apache.log4j.varia.NullAppender;
+import model.enums.HotelLocation;
+import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -14,15 +14,17 @@ import static org.junit.Assert.assertEquals;
 public class PersonTest {
 
     private Person person;
-    private List<Hotel> hotels = new ArrayList<Hotel>();
-    ;
+    private List<Hotel> hotels = new ArrayList<>();
+
+    // private static final Logger logger= LogManager.getLogger(PersonTest.class);
+
     private List<Client> clients = new ArrayList<Client>();
     private Client client;
     private Hotel hotel;
 
     @Before
     public void setup() {
-        org.apache.log4j.BasicConfigurator.configure(new NullAppender());
+
 
         person = new Person("Alex", "786165");
 
@@ -54,8 +56,9 @@ public class PersonTest {
     }
 
     @Test
-    public void findHotelWherePersonIs() {
+    public void findHotelWherePersonIsTest() {
         client.findHotelWherePersonIs(hotels);
+        assertEquals("Hilton", hotel.getName());
     }
 
     @Test
@@ -65,19 +68,22 @@ public class PersonTest {
         assertEquals("Alex", name);
     }
 
-    @Test
-    public void isSatisfied() {
+    @Ignore
+    public void isSatisfiedTest() {
         person.isSatisfied(person, false);
+
     }
 
     @Test
     public void commentsTest() {
-        person.comments("Me love");
+        String comments = person.comments("Me love");
+        Assert.assertNotNull(comments);
     }
 
-    @Test
-    public void ratesHotel() {
-        person.ratesHotel(person, 3, hotel);
+    @Ignore
+    public void ratesHotelTest() {
+        person.ratesHotel(person, 6, hotel);
+
     }
 
 

@@ -1,19 +1,22 @@
-package People;
+package model;
 
-import Hotel.Hotel;
-import Interfaces.IPerson;
-import Interfaces.ISatisfaction;
-import org.apache.log4j.Logger;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import service.ClientsService;
+import service.ISatisfaction;
+
+import java.io.Serializable;
 import java.util.List;
 
-import static People.ValidationException.validRate;
+import static model.ValidationException.validRate;
+
 
 //example of multiple inheritance
-public class Person implements IPerson, ISatisfaction {
+public class Person implements IPerson, ISatisfaction, Serializable {
 
 
-    private static final Logger logger = Logger.getLogger(Person.class.getName());
+    private static final Logger logger = LogManager.getLogger(ClientsService.class);
 
     private String name;
 
@@ -35,7 +38,7 @@ public class Person implements IPerson, ISatisfaction {
         return "Last four digits of credit card or employee number: " + lastFourDigits;
     }
 
-    String getNumber() {
+    public String getNumber() {
         return idNrOrCreditCard;
     }
 
@@ -87,8 +90,9 @@ public class Person implements IPerson, ISatisfaction {
         }
     }
 
-    public void comments(String message) {
+    public String comments(String message) {
         logger.debug("Satisfaction comments: " + message);
+        return message;
     }
 
     //Use custom ValidationException in case the user rates wrongly the hotel

@@ -1,43 +1,61 @@
 
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-P
- src/main/java/Menu/MainMenu.java,8/2/8272afa086370e4a8435974b8967e8913ef404b2
-W
-'src/main/java/People/HotelEmployee.java,9/3/934925322a6fac5c04fab9c53b4b44a164baf3e8
-P
- src/main/java/People/Person.java,e/d/edb3c67925c0632643dc532d3ce711a0e23149d9
-P
- src/main/java/People/Client.java,f/5/f526d057bf091c952012ba4773757ee91fbc8392
-N
-src/main/java/Hotel/Hotel.java,f/3/f31241042f9f73f06a65cbee186cbde8691e3f3f
-_
-/src/main/java/People/partTimeHotelEmployee.java,8/0/80ac5e9d7f533505ba8d31e200b7251332c92309
-_
-/src/main/java/People/PartTimeHotelEmployee.java,8/d/8d07985f644ea78b8bfd2ddaa1e6b0bf7b16f403
-S
-#src/main/java/Menu/Information.java,6/b/6b00fdee0e983c82203120854262ddb99116cbd6
-V
-&src/main/java/Interfaces/IBooking.java,4/c/4c1fbd655a4f56df322b7074a6a0ec02f635cac6
-L
-src/main/java/Menu/Room.java,f/d/fdbdea53e3f187dd3e2c8bdf479648d12f606c39
-[
-+src/main/java/Interfaces/ISatisfaction.java,8/d/8d5c932af6437de0b439492a2c5d499b6a7d8ece
-U
-%src/main/java/Interfaces/IPerson.java,d/0/d01d785713e34a0028c915f4930d1319a7f859a0
-a
-1src/main/java/Interfaces/OverloadConstructor.java,b/9/b9c5d53be7ea190079d06c3ca50e9eb8d35384a2
-]
--src/main/java/People/ValidationException.java,8/a/8a2ccca1061cb5722a3924e4ca11fbe0bec2e247
-T
-$src/test/java/People/ClientTest.java,7/8/78c984155689938d4f53d7be797496e2aad0839e
-T
-$src/test/java/People/PersonTest.java,1/e/1e5b879bdcc84520b75e436de611484578b3f9b1
 R
-"src/test/java/Hotel/HotelTest.java,f/b/fb56ff13d04abfce275e5dad6f49dcb026535fc7
-O
-src/main/java/Enums/Gender.java,4/4/44839605ba3f3994f35f3667b9f760ffba18fcfe
+"src/test/java/model/HotelTest.java,4/e/4e0c49945f0a5381626ff169940dc8592e687f2d
+M
+src/main/java/model/Room.java,4/0/40a1be856ea6eddd7083194285376e9eb25be8f7
+N
+src/main/java/model/Hotel.java,5/b/5b444203b94981ef8d0f331cecd5ccfd954b944e
+^
+.src/main/java/model/PartTimeHotelEmployee.java,d/b/db606741f691e3aae2596192d1082a28a5e385f8
 V
-&src/main/java/Enums/HotelLocation.java,a/6/a6089b67ff268816e6cb4b8d9d3a439f0dd8e61d
-Q
-!src/main/java/Enums/RoomType.java,1/7/17b728fb15552ddd0cde86ba1823933b678c403b
+&src/main/java/model/HotelEmployee.java,b/1/b19517130acfb1e27033a8f59365c64b4d935ea1
+\
+,src/main/java/model/ValidationException.java,5/d/5d39fbd60139a3c8addc7b041481d9a16133f842
+P
+ src/main/java/model/IPerson.java,b/5/b5011807bf73b9f5d2b5edadc7ccb5d8516197df
+S
+#src/main/java/service/IBooking.java,3/9/39709eb46b85fe795b53050b32da01ea187e028d
+O
+src/main/java/model/Client.java,b/f/bfded7b637e777f50fe8fcb194e9f89da888e4db
+Z
+*src/main/java/service/EmployeeService.java,5/2/522020f9865de9c749b4d6419f588c7a7971a6fc
+Y
+)src/main/java/service/ClientsService.java,7/9/795b4be8b0f79071dbf361ed62d63635a599fea1
+O
+src/main/java/model/Person.java,d/e/de79464f0bdf6673dba8ecb903704c783d5ec95a
+S
+#src/test/java/model/ClientTest.java,b/b/bb1b153861f9035f78044c04e2ce20d5825541cb
+V
+&src/main/java/repository/MainMenu.java,d/5/d5b2ed10f6d59cd9a05a6f9843d3cd40c57159fd
+S
+#src/test/java/model/PersonTest.java,9/2/92bbf215e6835c6178a9c5cf354c488039bc3b7c
+^
+.src/main/java/service/OverloadConstructor.java,a/7/a7d91639b20614705b783276339321b5ed083580
+X
+(src/main/java/service/ISatisfaction.java,9/0/90b6564e0948779e9f138ff7fd9bfb3a25f723bf
+V
+&src/main/java/service/Information.java,4/7/4711e8e1f538fceac2e43b92c22c8e82b99acc11
+X
+(src/main/java/repository/AddClients.java,3/e/3e74b0dbf578de65fe836cca3c66acb899dfbd53
+Z
+*src/main/java/repository/AddEmployees.java,7/d/7dbc89f22874504003392fe0fd980b660f6c08c0
+W
+'src/main/java/repository/AddHotels.java,5/e/5e4e5f45e65b18545a81e49edca4d02b4c1fefdb
+;
+newtext.txt,f/2/f274bf6445c3678ba627284442e02adb61667b3d
+8
+text.txt,c/8/c850b9c8461fa0cd791020e0135de2b8bfb50481
+9
+	text2.txt,7/a/7ad13868f75e26f5d6d2d7a1b8f838ecb6f36a7d
+<
+newtext2.txt,d/d/dd0c2a3ccb33e6409b5750ef7ff9ac87638998c4
+U
+%src/main/java/service/IOExamples.java,d/a/da295d03e52b3eb462064c07a8f765fff0a86f00
+W
+'src/main/java/service/HotelService.java,7/3/735c3e31610c1fc0fa4239b26bd825037041d82a
+\
+,src/main/java/model/enums/HotelLocation.java,a/0/a0a2cd81efcc48f9d85b180b4e953ffc5144c2b2
+9
+	hotel.csv,1/1/11619474001b0c556ec2d0a5cebf54304aabae7d

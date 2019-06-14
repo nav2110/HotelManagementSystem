@@ -1,7 +1,7 @@
-package Interfaces;
+package service;
 
-import Menu.Room;
-import People.Client;
+import model.Client;
+import model.Room;
 
 /**
  *

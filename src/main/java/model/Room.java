@@ -1,13 +1,15 @@
-package Menu;
+package model;
 
-import Enums.RoomType;
+import model.enums.RoomType;
 
-public class Room {
+import java.io.Serializable;
+
+public class Room implements Serializable {
     //Use private, public and protected access modifiers
     private RoomType type;
     private double price;
 
-    protected Room(RoomType type, double price) {
+    public Room(RoomType type, double price) {
         this.type = type;
         this.price=price;
     }

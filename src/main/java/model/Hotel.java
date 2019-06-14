@@ -1,14 +1,13 @@
-package Hotel;
+package model;
 
-import Enums.HotelLocation;
-import Menu.Room;
-import People.Client;
-import People.HotelEmployee;
+import model.enums.HotelLocation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Hotel {
+public class Hotel implements Serializable {
+
     private String name;
 
     private int stars;
@@ -17,12 +16,13 @@ public class Hotel {
 
     private final int capacity;
 
+    private List<Client> clients = new ArrayList<>();
 
-    private List<Client> clients = new ArrayList<Client>();
+    private List<HotelEmployee> employees = new ArrayList<>();
 
-    private List<HotelEmployee> employees = new ArrayList<HotelEmployee>();
+    private List<Room> rooms = new ArrayList<>();
 
-    private List<Room> rooms = new ArrayList<Room>();
+    private long serialVersionUID = 1l;
 
     public Hotel(String name, int stars, HotelLocation location, int capacity) {
         this.name = name;
@@ -52,10 +52,6 @@ public class Hotel {
     }
 
 
-    public void setRooms(List<Room> rooms) {
-        this.rooms = rooms;
-    }
-
 
     public List<HotelEmployee> getHotelEmployees() {
         return employees;
@@ -78,5 +74,9 @@ public class Hotel {
 
     public void setClients(List<Client> clients) {
         this.clients = clients;
+    }
+
+    public void setRooms(List<Room> rooms) {
+        this.rooms = rooms;
     }
 }
