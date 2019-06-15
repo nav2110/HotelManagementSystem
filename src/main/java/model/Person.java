@@ -1,6 +1,9 @@
 package model;
 
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import service.ClientsService;
@@ -11,7 +14,9 @@ import java.util.List;
 
 import static model.ValidationException.validRate;
 
-
+@Getter
+@Setter
+@ToString
 //example of multiple inheritance
 public class Person implements IPerson, ISatisfaction, Serializable {
 
@@ -21,6 +26,7 @@ public class Person implements IPerson, ISatisfaction, Serializable {
     private String name;
 
     private String idNrOrCreditCard;
+
 
     public Person(String name, String idNrOrCreditCard) {
         this.name=name;
@@ -107,4 +113,9 @@ public class Person implements IPerson, ISatisfaction, Serializable {
         }
 
     }
+
+
 }
+
+
+

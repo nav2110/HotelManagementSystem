@@ -9,9 +9,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Getter
 
-//Exampe of two generics for a class
+//Example of two generics for a class
 public class Room<X, Y> implements Serializable {
-    //Use private, public and protected access modifiers
+
     private X type;
     private Y price;
 

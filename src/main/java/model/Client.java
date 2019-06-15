@@ -36,6 +36,9 @@ public class Client extends Person implements IBooking {
         this.plateNumber = plateNumber;
     }
 
+    public String getCreditCard() {
+        return creditCard;
+    }
 
     public void cancelBooking(Client client) {
 
@@ -108,4 +111,6 @@ public class Client extends Person implements IBooking {
     public int hashCode() {
         return Objects.hash(creditCard);
     }
+
+
 }

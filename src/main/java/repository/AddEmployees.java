@@ -20,6 +20,7 @@ class AddEmployees {
 
         HotelEmployee employee1 = new HotelEmployee("Radu Radulescu", "78645", "PN54254256JU", "cleaner", Gender.MALE);
 
+
         employee1.isSatisfied(employee1, true);
 
         //Added a satisfaction of 6 stars to test the custom validationexception class
