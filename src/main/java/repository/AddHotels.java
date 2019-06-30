@@ -14,21 +14,30 @@ class AddHotels {
     static void addHotels(List<Hotel> hotels) {
 
 
-        //Create a list of hotels
-        Hotel hotel1 = new Hotel("Dacia", 3, HotelLocation.SATUMARE, 3);
+        //Create a list of hotels using the Builder pattern
+        //Comment out old constructor Hotel hotel1 = new Hotel("Dacia", 3, HotelLocation.SATUMARE, 3);
+        Hotel hotel1 = new Hotel.Builder().name("Dacia").stars(5).
+                location(HotelLocation.CLUJNAPOCA).capacity(4).build();
 
         hotels.add(hotel1);
 
 
-        Hotel hotel2 = new Hotel("Grand Hodel Italia", 5, HotelLocation.CLUJNAPOCA, 4);
+        Hotel hotel2 = new Hotel.Builder().name("Grand Hodel Italia").stars(5)
+                .capacity(4).location(HotelLocation.CLUJNAPOCA).build();
 
-        hotels.add(hotel2);
+        Hotel hotel3 = new Hotel.Builder().name("Continental").stars(4)
+                .capacity(5).location(HotelLocation.BUCURESTI).build();
 
-        Hotel hotel3 = new Hotel("Continental", 4, HotelLocation.BUCURESTI, 5);
+        //Hotel hotel3 = new Hotel("Continental", 4, HotelLocation.BUCURESTI, 5);
 
         hotels.add(hotel3);
 
-        Hotel hotel4 = new Hotel("Grand Hodel Pata Rat", 0, HotelLocation.PATA, 1000);
+        Hotel hotel4 = new Hotel.Builder()
+                .name("Grand Hodel Pata Rat")
+                .stars(0)
+                .location(HotelLocation.PATA)
+                .build();
+        //Hotel hotel4 = new Hotel("Grand Hodel Pata Rat", 0, HotelLocation.PATA, 1000);
 
         hotels.add(hotel4);
     }

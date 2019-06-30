@@ -4,10 +4,10 @@ import model.enums.Gender;
 
 public class HotelEmployee extends Person {
 
-    private String jobTitle;
+    private String employeeNr;
 
     private final Gender gender;
-    private String employeeNr;
+    private String jobTitle;
 
 
     public HotelEmployee(String name, String id, String employeeNr, String jobTitle, Gender gender) {

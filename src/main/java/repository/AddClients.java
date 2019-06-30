@@ -24,7 +24,9 @@ public class AddClients {
 
         Client client1 = new Client("Marcel Proust", "111", "111111111");
 
-        Room singleRoom1 = new Room(RoomType.SINGLE, 49.99);
+
+     Room singleRoom1 = new Room(RoomType.SINGLE, 49.99);
+
 
         client1.bookARoom(client1, singleRoom1, 11);
 

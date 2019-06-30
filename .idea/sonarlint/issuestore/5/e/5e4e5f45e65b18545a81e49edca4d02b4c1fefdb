@@ -1,3 +1,3 @@
 
-Hsquid:S1481:"*Remove this unused "hotel" local variable.(ÉŸ∏ç8•—íµ≠-
-Xsquid:S1118":Add a private constructor to hide the implicit public one.(Ù‚¶’8ô∆ó¥≠-
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(Ù‚¶’8ô∆ó¥≠-
+Fsquid:S1068"*Remove this unused "logger" private field.(øı≤Ä8“´â¨µ-

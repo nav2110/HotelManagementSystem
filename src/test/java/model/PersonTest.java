@@ -28,7 +28,9 @@ public class PersonTest {
 
         person = new Person("Alex", "786165");
 
-        hotel = new Hotel("Hilton", 5, HotelLocation.BUCURESTI, 12);
+        hotel = new Hotel.Builder().name("Hilton").stars(4).location(HotelLocation.CLUJNAPOCA)
+                .capacity(12).build();
+
 
         client = new Client("Gigi", "11111", "222222");
 

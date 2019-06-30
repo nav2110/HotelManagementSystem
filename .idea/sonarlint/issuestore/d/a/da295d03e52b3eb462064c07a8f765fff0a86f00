@@ -1,5 +1,8 @@
 
-Msquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8³†×‡µ-
-qsquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(å·“Šüÿÿÿÿ8³†×‡µ-
-]squid:S1118
-":Add a private constructor to hide the implicit public one.(Ò¨æğşÿÿÿÿ8‰ó‘°­-
+[squid:S1118":Add a private constructor to hide the implicit public one.(Ò¨æğşÿÿÿÿ8‰ó‘°­-
+Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8³†×‡µ-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8²äŞ¦µ-
+osquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(å·“Šüÿÿÿÿ8³†×‡µ-
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8²äŞ¦µ-
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ëÕ¥§µ-
+esquid:S2583"DChange this condition so that it does not always evaluate to "false"(¿—¢ùÿÿÿÿ8¨Å‹§µ-

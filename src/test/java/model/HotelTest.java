@@ -19,7 +19,8 @@ public class HotelTest {
 
     @Before
     public void setup() {
-        hotel = new Hotel("Hilton", 4, HotelLocation.CLUJNAPOCA, 12);
+        hotel = new Hotel.Builder().name("Hilton").stars(4).location(HotelLocation.CLUJNAPOCA)
+                .capacity(12).build();
 
         employeeList = new ArrayList<>();
 
