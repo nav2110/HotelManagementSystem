@@ -8,6 +8,7 @@ get the total costs of a room for a particular client.
 
 import model.Client;
 import model.Hotel;
+import model.HotelThread;
 import model.Room;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -68,6 +69,13 @@ public class MainMenu {
 
         mapHotels(hotels);
 
+
+        HotelThread hotelThread = new HotelThread();
+
+        AddClientThreads.addClientsToHotelThread(hotelThread);
+
+        HotelStatisticsThread hotelStatisticsThread = new HotelStatisticsThread(hotelThread);
+        hotelStatisticsThread.start();
 
     }
 

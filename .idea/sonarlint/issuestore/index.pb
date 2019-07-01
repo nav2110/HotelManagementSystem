@@ -74,3 +74,9 @@ Q
 :
 
 hotels.dat,7/c/7c4569188b19ceee88bbf50f79e74632b8a75568
+L
+.idea/codeStyles/Project.xml,6/e/6ecd6000a7b6f4a2884412ff19f74193ed089648
+U
+%src/main/java/model/ClientThread.java,e/f/ef4f8c7f86853ad582a84f10f4fe94ebdfa6faf0
+T
+$src/main/java/model/CheckInData.java,d/d/dd8bfe27fa4644bc97e0ba4077f960e8d3981a43
