@@ -80,3 +80,11 @@ U
 %src/main/java/model/ClientThread.java,e/f/ef4f8c7f86853ad582a84f10f4fe94ebdfa6faf0
 T
 $src/main/java/model/CheckInData.java,d/d/dd8bfe27fa4644bc97e0ba4077f960e8d3981a43
+`
+0src/main/java/service/HotelStatisticsThread.java,9/0/90fb57386d89b668150ab2808636a11c704d7982
+T
+$src/main/java/model/HotelThread.java,7/1/713f68294c77cd067ca1883039910c350083d3bf
+^
+.src/main/java/repository/AddClientThreads.java,c/0/c046ca6d0cf906839431569a8e9e209e6e4f5e4d
+M
+src/main/java/model/JDBC.java,9/9/999c526dc611e398c9c14d47cf31a9c26383da06

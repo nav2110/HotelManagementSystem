@@ -6,10 +6,7 @@ get the total costs of a room for a particular client.
  */
 
 
-import model.Client;
-import model.Hotel;
-import model.HotelThread;
-import model.Room;
+import model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import service.*;
@@ -77,6 +74,9 @@ public class MainMenu {
         HotelStatisticsThread hotelStatisticsThread = new HotelStatisticsThread(hotelThread);
         hotelStatisticsThread.start();
 
+        JDBC.connectToDBAndDoStuff(hotels);
+
+
     }
 
     private static void mapHotels(List<Hotel> hotels) {
@@ -88,7 +88,7 @@ public class MainMenu {
 
         for (Hotel hotel : hotels) {
 
-            hotel.setUuid(rand.nextLong());
+            hotel.setUuid(rand.nextInt());
 
             long key = hotel.getUuid();
 

@@ -1,6 +1,8 @@
 package model;
 
 import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import model.enums.HotelLocation;
 
 import java.io.Serializable;
@@ -8,7 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Getter
-
+@Setter
+@ToString
 //This class uses a builder pattern.
 //For practice purposes, I avoided using the lombok.Builder import
 public class Hotel implements Serializable {
@@ -28,7 +31,8 @@ public class Hotel implements Serializable {
 
     private List<Room> rooms = new ArrayList<>();
 
-    private Long uuid;
+
+    private int uuid;
 
 
     private Hotel(Builder builder) {
@@ -39,48 +43,11 @@ public class Hotel implements Serializable {
 
     }
 
-    public static class Builder {
-
-        private String name;
-
-        private int stars;
-
-        private int capacity;
-
-        private HotelLocation location;
-
-        public Builder name(String name) {
-            this.name = name;
-            return this;
-        }
-
-        public Builder stars(int stars) {
-            this.stars = stars;
-            return this;
-        }
-
-        public Builder capacity(int capacity) {
-            this.capacity = capacity;
-            return this;
-        }
-
-        public Builder location(HotelLocation location) {
-            this.location = location;
-            return this;
-        }
-
-        public Hotel build() {
-
-            return new Hotel(this);
-        }
-    }
-    public Long getUuid() {
+    public int getUuid() {
         return uuid;
     }
 
-    public void setUuid(Long uuid) {
-        this.uuid = uuid;
-    }
+
 
     public String getName() {
         return name;
@@ -126,5 +93,47 @@ public class Hotel implements Serializable {
 
     public void setRooms(List<Room> rooms) {
         this.rooms = rooms;
+    }
+
+    public void setUuid(int uuid) {
+        this.uuid = uuid;
+    }
+
+    public static class Builder {
+
+
+        private String name;
+
+        private int stars;
+
+        private int capacity;
+
+        private HotelLocation location;
+
+        public Builder name(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public Builder stars(int stars) {
+            this.stars = stars;
+            return this;
+        }
+
+        public Builder capacity(int capacity) {
+            this.capacity = capacity;
+            return this;
+        }
+
+        public Builder location(HotelLocation location) {
+            this.location = location;
+            return this;
+        }
+
+
+        public Hotel build() {
+
+            return new Hotel(this);
+        }
     }
 }
