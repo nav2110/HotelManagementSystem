@@ -1,0 +1,19 @@
+
+ksquid:S2259?"HA "NullPointerException" could be thrown; "connection" is nullable here.(šã§¬úÿÿÿÿ8¨Ÿş»-
+esquid:S2095_"GUse try-with-resources or close this "Statement" in a "finally" clause.(­î×ø8Ìù”–»-
+\
+squid:S106€"9Replace this use of System.out or System.err by a logger.(ŞÆ­Ûşÿÿÿÿ8êüĞ—»-
+msquid:S2095W"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(áÒ²†8êüĞ—»-
+rsquid:S2095N"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(íÛçîùÿÿÿÿ8Àµù•»-
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(¨ğä‡8ïŞ¿•»-
+Gsquid:S1148”"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8êüĞ—»-
+msquid:S2095C"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ëƒ¡8¬§õ•»-
+Xsquid:S1141B"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¬§õ•»-
+jsquid:S2095`"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¡–ÅĞşÿÿÿÿ8êüĞ—»-
+rsquid:S2095["OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(åº“ ıÿÿÿÿ8êüĞ—»-
+[
+squid:S106H"9Replace this use of System.out or System.err by a logger.(…‰Ùúüÿÿÿÿ8¬§õ•»-
+Fsquid:S1148r"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8êüĞ—»-
+Gsquid:S1148†"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8êüĞ—»-
+V
+squid:S106j"9Replace this use of System.out or System.err by a logger.(¡¯¬å8êüĞ—»-

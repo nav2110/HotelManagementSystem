@@ -1,15 +1,15 @@
 
+Fsquid:S1604u"(Make this anonymous inner class a lambda(Ðá“£8–Â˜Óµ-
+Asquid:S2119W"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8–Â˜Óµ-
 Bsquid:S2119°"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8žšÑÕµ-
 W
 squid:S106Ö"9Replace this use of System.out or System.err by a logger.(·Å˜§8žšÑÕµ-
-vsquid:S00117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ð¡çÔüÿÿÿÿ8žšÑÕµ-
-Lsquid:S1604‹"(Make this anonymous inner class a lambda(¾Ì®šùÿÿÿÿ8–Â˜Óµ-
-\squid:S1155h">Use isEmpty() to check whether the collection is empty or not.(œãï–8–Â˜Óµ-
-Fsquid:S1604u"(Make this anonymous inner class a lambda(Ðá“£8–Â˜Óµ-
 \
 squid:S106Ý"9Replace this use of System.out or System.err by a logger.(¹µæ÷úÿÿÿÿ8žšÑÕµ-
+Qsquid:S3655ä"2Call "max.isPresent()" before accessing the value.(é‹æè8žšÑÕµ-
+Lsquid:S1604‹"(Make this anonymous inner class a lambda(¾Ì®šùÿÿÿÿ8–Â˜Óµ-
 \
 squid:S106Ÿ"9Replace this use of System.out or System.err by a logger.(Ë–¨Ëþÿÿÿÿ8±—ßÕµ-
-Asquid:S2119W"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8–Â˜Óµ-
-Qsquid:S3655ä"2Call "max.isPresent()" before accessing the value.(é‹æè8žšÑÕµ-
+vsquid:S00117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ð¡çÔüÿÿÿÿ8žšÑÕµ-
+\squid:S1155h">Use isEmpty() to check whether the collection is empty or not.(œãï–8–Â˜Óµ-
 vsquid:S00117»"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÂÊ÷ûÿÿÿÿ8½Å±Óµ-
