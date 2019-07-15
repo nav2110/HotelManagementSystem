@@ -1,5 +1,5 @@
 
-Hsquid:S1068"*Remove this unused "logger" private field.(¿õ²€8Ò«‰¬µ-
+Isquid:S1481"+Remove this unused "hotel2" local variable.(“û«•8ÝÓÐ¿º-
 Xsquid:S1118
 ":Add a private constructor to hide the implicit public one.(ôâ¦Õ8™Æ—´­-
-Isquid:S1481"+Remove this unused "hotel2" local variable.(“û«•8ÝÓÐ¿º-
+Hsquid:S1068"*Remove this unused "logger" private field.(¿õ²€8Ò«‰¬µ-
